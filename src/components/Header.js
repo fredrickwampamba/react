@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Button from './Button'
-import Tasks from './Tasks'
 
 const Header = (props) => {
 
@@ -9,6 +8,8 @@ const Header = (props) => {
         console.log(e)
         alert("You just clicked me")
     }
+
+    
     return (
         <div>
             {/* <h1>{props.title} is the best in the {props.market} in shop with stall number {props.stallno}</h1> */}
@@ -16,7 +17,6 @@ const Header = (props) => {
                 <h1>Task Scheduler</h1>
                 <Button color='green' text="Add" onClick={onClick} />
             </header>
-            <Tasks />
         </div>
     )
 }
